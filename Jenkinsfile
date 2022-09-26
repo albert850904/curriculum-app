@@ -40,5 +40,11 @@ pipeline {
       }
     }
 
+    stage('push') {
+      steps {
+        sh 'docker push kairucheng/curriculum-front-test:latest'
+      }
+    }
+
   }
 }
